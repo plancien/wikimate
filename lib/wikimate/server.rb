@@ -39,8 +39,8 @@ module Wikimate
       if page = interpreter.pages.detect{|p| "/#{p}" == path_info.sub(/\.html$/,'')}
         content = interpreter.html_for_page(page)
         [200, {"Content-Type" => "text/html", "Content-Length" => content.length.to_s}, content]
-      elsif path_info == "/application.js"
-        content = File.open('application.js').read
+      elsif path_info == "/wikimate.js"
+        content = File.open(File.join(LIB_DIR, 'wikimate.js')).read
         [200, {"Content-Type" => "text/javascript", "Content-Length" => content.length.to_s}, content]
       elsif path_info == "/wikimate.css"
         content = File.open(File.join(LIB_DIR, 'wikimate.css')).read

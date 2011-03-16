@@ -5,7 +5,9 @@ module Wikimate
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="wikimate.css" type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="wikimate.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="wikimate.js" type="text/javascript"></script>
     <title>TITLE</title>
   </head>
 EOS

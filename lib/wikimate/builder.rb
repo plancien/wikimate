@@ -14,7 +14,9 @@ module Wikimate
           file.write interpreter.html_for_page(page)
         end
       end
-      FileUtils.cp(File.join(LIB_DIR, 'wikimate.css'), File.join(@output_dir, 'wikimate.css'))
+      ['wikimate.css', 'wikimate.js'].each do |file_name|
+        FileUtils.cp(File.join(LIB_DIR, file_name), File.join(@output_dir, file_name))
+      end
     end
 
   end
