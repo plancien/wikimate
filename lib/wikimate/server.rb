@@ -42,8 +42,8 @@ module Wikimate
       elsif path_info == "/application.js"
         content = File.open('application.js').read
         [200, {"Content-Type" => "text/javascript", "Content-Length" => content.length.to_s}, content]
-      elsif path_info == "/application.css"
-        content = File.open('application.css').read
+      elsif path_info == "/wikimate.css"
+        content = File.open(File.join(LIB_DIR, 'wikimate.css')).read
         [200, {"Content-Type" => "text/css", "Content-Length" => content.length.to_s}, content]      
       else
         [404, {"Content-Type" => "text/plain"}, "not found"]

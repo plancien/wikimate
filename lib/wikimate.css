@@ -1,0 +1,14 @@
+body{
+  margin: 1em 4em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: Palatino, Georgia, serif;
+}
+
+h1{
+  font-size: 1.5em;
+  color: #068;
+  margin-top: 1.5em;
+}

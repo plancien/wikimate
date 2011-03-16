@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
-$:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
+LIB_DIR = File.join(File.dirname(__FILE__), ['..', 'lib'])
+
+$:.unshift LIB_DIR
 
 help = <<HELP
 Wikimate is a markdown interpreter with wikilinks (without any historic display, use your cvs for that).
